@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aara Glam MakeOver</title>
+
+      <link rel="stylesheet" href="/src/style.css" />
+
+</head>
+
+  <body>
+    <div class="bg">
+      <div class="card">
+        <h1 class="title">LOGIN</h1>
+
+        <form id="loginForm" novalidate>
+          <!-- Email -->
+          <div class="input-group">
+            <span class="icon" aria-hidden="true">
+              <!-- Mail icon -->
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+            </span>
+            <input id="email" type="email" placeholder="Email" autocomplete="email" />
+          </div>
+          <small class="err" id="emailErr"></small>
+
+          <!-- Password -->
+          <div class="input-group">
+            <span class="icon" aria-hidden="true">
+              <!-- Lock icon -->
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-7h-1V8a5 5 0 0 0-10 0v2H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm-7 0H9V8a3 3 0 0 1 6 0v2h-4z"
+                />
+              </svg>
+            </span>
+            <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
+          </div>
+          <small class="err" id="pwdErr"></small>
+
+          <!-- Remember -->
+          <label class="remember">
+            <input id="remember" type="checkbox" />
+            <span>Remember me</span>
+          </label>
+
+          <!-- Login button -->
+          <button id="loginBtn" class="btn" type="submit">
+            <span class="btn-text">LOGIN</span>
+            <span class="loader" aria-hidden="true"></span>
+          </button>
+
+          <div class="or">Or login with</div>
+
+          <!-- Social -->
+          <div class="social-row">
+            <button type="button" class="social fb">
+              <span class="s-ico">f</span>
+              <span>Facebook</span>
+            </button>
+
+            <button type="button" class="social gg">
+              <span class="g-dot">G</span>
+              <span>Google</span>
+            </button>
+          </div>
+
+          <p class="bottom">
+            Not a member? <a href="#" onclick="return false;">Sign up now</a>
+          </p>
+
+          <div id="toast" class="toast" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Vite JS path -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
