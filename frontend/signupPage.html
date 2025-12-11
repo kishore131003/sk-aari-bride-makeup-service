@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aara Glam MakeOver – Sign Up</title>
+ 
+    <link rel="stylesheet" href="./styles/style.css" />
+  
+</head>
+<body>
+  <div class="bg">
+    <div class="card">
+      <h1 class="title">SIGN UP</h1>
+
+      <form id="signupForm" novalidate>
+        <!-- Email -->
+        <div class="input-group">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+          </span>
+          <input id="suEmail" type="email" placeholder="Email" autocomplete="email" />
+        </div>
+        <small class="err" id="suEmailErr"></small>
+
+        <!-- Password -->
+        <div class="input-group">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path
+                d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-7h-1V8a5 5 0 0 0-10 0v2H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm-7 0H9V8a3 3 0 0 1 6 0v2h-4z"
+              />
+            </svg>
+          </span>
+          <input
+            id="suPassword"
+            type="password"
+            placeholder="Password (min 6 characters)"
+            autocomplete="new-password"
+          />
+        </div>
+        <small class="err" id="suPwdErr"></small>
+
+        <!-- Confirm password -->
+        <div class="input-group">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path
+                d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-7h-1V8a5 5 0 0 0-10 0v2H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm-7 0H9V8a3 3 0 0 1 6 0v2h-4z"
+              />
+            </svg>
+          </span>
+          <input
+            id="suConfirm"
+            type="password"
+            placeholder="Confirm password"
+            autocomplete="new-password"
+          />
+        </div>
+        <small class="err" id="suConfirmErr"></small>
+
+        <!-- Create account -->
+        <button id="signupBtn" class="btn" type="submit">
+          <span class="btn-text">CREATE ACCOUNT</span>
+          <span class="loader" aria-hidden="true"></span>
+        </button>
+
+        <p class="bottom">
+          Already have an account?
+          <a href="./loginPage.html" class="lp-btn-outline">Login</a>
+        </p>
+
+        <div id="suToast" class="toast" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/signup.js"></script>
+</body>
+</html>

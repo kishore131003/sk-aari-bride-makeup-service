@@ -4,83 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aara Glam MakeOver</title>
+  <link rel="stylesheet" href="./styles/style.css" />
 
-      <link rel="stylesheet" href="./styles/style.css" />
-      <script type="module" src="./js/app.js"></script>
-
+ 
 </head>
+<body class="landing">
+  <div class="lp-shell">
+    <!-- TOP NAV -->
+    <header class="lp-header">
+      <div class="lp-logo">
+        <!-- If you have an actual logo image, replace the circle with <img> -->
+        <div class="lp-logo-mark">AG</div>
+        <div class="lp-logo-text">
+          <span class="lp-logo-name">Aara Glam MakeOver</span>
+          <span class="lp-logo-tag">Bridal & Party MakeUp Artist</span>
+        </div>
+      </div>
 
-  <body>
-    <div class="bg">
-      <div class="card">
-        <h1 class="title">LOGIN</h1>
+      <nav class="lp-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+      </nav>
 
-        <form id="loginForm" novalidate>
-          <!-- Email -->
-          <div class="input-group">
-            <span class="icon" aria-hidden="true">
-              <!-- Mail icon -->
-              <svg viewBox="0 0 24 24" width="18" height="18">
-                <path
-                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
-                />
-              </svg>
-            </span>
-            <input id="email" type="email" placeholder="Email" autocomplete="email" />
-          </div>
-          <small class="err" id="emailErr"></small>
+      <div class="lp-header-actions">
+        <a href="./loginPage.html" class="lp-btn-outline">Login</a>
+        <a href="./signupPage.html" class="lp-btn-outline">Sign up</a>
+      </div>
+    </header>
 
-          <!-- Password -->
-          <div class="input-group">
-            <span class="icon" aria-hidden="true">
-              <!-- Lock icon -->
-              <svg viewBox="0 0 24 24" width="18" height="18">
-                <path
-                  d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-7h-1V8a5 5 0 0 0-10 0v2H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm-7 0H9V8a3 3 0 0 1 6 0v2h-4z"
-                />
-              </svg>
-            </span>
-            <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
-          </div>
-          <small class="err" id="pwdErr"></small>
-
-          <!-- Remember -->
-          <label class="remember">
-            <input id="remember" type="checkbox" />
-            <span>Remember me</span>
-          </label>
-
-          <!-- Login button -->
-          <button id="loginBtn" class="btn" type="submit">
-            <span class="btn-text">LOGIN</span>
-            <span class="loader" aria-hidden="true"></span>
-          </button>
-
-          <div class="or">Or login with</div>
-
-          <!-- Social -->
-          <div class="social-row">
-            <button type="button" class="social fb">
-              <span class="s-ico">f</span>
-              <span>Facebook</span>
-            </button>
-
-            <button type="button" class="social gg">
-              <span class="g-dot">G</span>
-              <span>Google</span>
-            </button>
+    <!-- HERO SECTION -->
+    <main class="lp-hero">
+      <div class="lp-hero-card">
+        <!-- left: “screen” with bride photo -->
+        <div class="lp-hero-left">
+          <div class="lp-photo-frame">
+            <!--
+              Replace background-image in CSS with your real photo.
+              For now it’s just a gradient placeholder.
+            -->
           </div>
 
-          <p class="bottom">
-            Not a member? <a href="#" onclick="return false;">Sign up now</a>
+          <div class="lp-mini-strip">
+            <div class="lp-mini-pic"></div>
+            <div class="lp-mini-pic"></div>
+            <div class="lp-mini-pic"></div>
+          </div>
+        </div>
+
+        <!-- right: text + CTAs -->
+        <div class="lp-hero-right">
+          <p class="lp-kicker">Planned to perfection</p>
+          <h1 class="lp-title">
+            Extraordinary Looks<br />
+            Don’t Just Happen,<br />
+            They’re Created
+          </h1>
+
+          <p class="lp-lead">
+            From engagement glow to bridal elegance, Aara Glam MakeOver
+            crafts complete wedding looks that match your story, style,
+            and personality.
           </p>
 
-          <div id="toast" class="toast" role="status" aria-live="polite"></div>
-        </form>
-      </div>
-    </div>
+          <div class="lp-cta-row">
+            <a href="./signup.html" class="lp-cta-primary">
+              Book Your Makeover
+            </a>
 
-    <!-- Vite JS path -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+            <button type="button" class="lp-cta-secondary">
+              <span class="lp-play-icon">▶</span>
+              View Portfolio
+            </button>
+          </div>
+
+          <div class="lp-contact-row">
+            <div class="lp-contact-pill">
+              <span class="lp-contact-label">Call for bookings</span>
+              <a href="tel:+919876543210" class="lp-contact-phone">
+                +91 98765 43210
+              </a>
+            </div>
+
+            <div class="lp-rating">
+              ★★★★★
+              <span>Trusted by happy brides</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
